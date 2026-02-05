@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="/Home">HTML Dog</a>
+        <a href="/Tutorials">Tutorials</a>
+        <a href="/Techniques">Techniques</a>
+        <a href="/Examples">Examples</a>
+        <a href="/References">References</a>
+    </nav>
+    <header>
+        <h1>
+            Sectioning
+        </h1>
+        <p>
+            While headings do a grand, perfectly valid, job in defining the start of a new section or sub-section in a document,
+            there are a number of elements that can be exploited to establish a cleaner,
+            clearer semantic structure.
+        </p>
+        <p>
+            Whereas div elements can be used to contain sections, used primarily as scaffolding on which to hang CSS, they don't hold a great deal of meaning.
+             Sectioning involves a handful of tags that can be used to define specific parts of a page, such as articles, headers, footers, and navigation.
+        </p>
+    </header>
+    <main>
+        <article>
+            <section id="Articles and Sections">
+                <h2>
+                    Articles and Sections
+                </h2>
+                <p>
+                    An article element can be used to mark up a standalone section of content. This could be used just once,
+                    if you think of a blog post as an article, for example, or a number of times,
+                    if you imagine replicating a traditional newspaper page with numerous articles.
+                </p>
+                <p>
+                    A section element represents a more general section and could be used to split up an article, or to represent chapters, for example.
+                </p>
+                <p>
+                    
+                </p>
+                <p>
+                    While divs could be used to make these separations (or even if you didn't need these separations for styling),
+                    this provides a much richer, more meaningful document.
+                </p>
+                <p>
+                    The HTML5 specifications suggest that you can use h1 elements at the start of each section,
+                    which would become a sub-heading of anything preceding that section 
+                    (so, in the example above, if you had an h1 immediately following the opening article tag, an h1 immediately after an opening section tag would be a sub-heading of that initial h1).
+                    This screws backwards compatibility, however, and any user agents (including screen readers) that don't understand this won't apply properly structured heading levels.
+                    We suggest sticking to the headings levels you would use if you didn't use sections (so h1, followed by h2, etc, regardless of the sectioning).
+                    This doesn't break anything or detract from the meaning or semantics.
+                </p>
+            </section>
+            <section id="Headers and Footers">
+                <h2>
+                    Headers and Footers
+                </h2>
+            </section>
+        </article>
+    </main>
+</body>
+</html>
