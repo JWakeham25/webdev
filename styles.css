@@ -1,0 +1,23 @@
+body {
+    background-color: grey;
+}
+
+section {
+    width: 400px; /*The width was just set to 400 so I added px to make sure that it was 400 pixels*/
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.conclusion {
+    font-weight: bold;
+}
+
+.dangerous {
+    font-weight: normal;
+    color: red;
+    border: 4px solid red;
+}
+
+p .dangerous {
+    padding: 4px;
+}
